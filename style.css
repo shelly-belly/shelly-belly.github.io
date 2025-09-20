@@ -53,7 +53,7 @@ header h1 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 0.2rem;
+  margin-bottom: -0.5rem;
 }
 
 nav .nav-list {
@@ -96,15 +96,16 @@ nav .nav-list a:hover {
   margin-bottom: 2rem;
 }
 
-.socials a {
-  color: #ff6666;        
-  text-decoration: none; 
-  font-size: 1.0rem; 
-  margin: 0 0.3rem;
+
+.social-list a {
+  color: #ff6666;       /* red icon color */
+  font-size: 1.1rem;
+  padding: 0 0.3rem;
+  text-decoration: none;
 }
 
-.socials a:hover {
-  color: #ff9999;
+.social-list a:hover {
+  color: #ff9999;       /* lighter red on hover */
 }
 
 .social-list {
@@ -131,15 +132,6 @@ nav .nav-list a:hover {
 }
 
 
-.social-list a {
-  color: #ff6666;       /* red icon color */
-  font-size: 1.3rem;
-  text-decoration: none;
-}
-
-.social-list a:hover {
-  color: #ff9999;       /* lighter red on hover */
-}
 
 /* Writings section */
 .writings h2 {
