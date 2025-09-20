@@ -34,6 +34,7 @@ body::before {
 
 /* Header block */
 header {
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
