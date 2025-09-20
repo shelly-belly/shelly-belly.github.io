@@ -6,13 +6,26 @@
 }
 
 body {
-  background-color: #111; /* dark background */
-  color: #eaeaea;
+  /* Use your reddish image */
+  background: url("cw.jpeg") no-repeat center center fixed;
+  background-size: cover;
+
+  color: #ffffff; /* white text for contrast */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
   max-width: 800px;
   margin: auto;
   padding: 2rem;
+  font-size: 1.1rem; /* slightly bigger font */
+}
+
+/* Add a subtle dark overlay so text is readable */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -1;
 }
 
 /* Header block */
@@ -27,23 +40,23 @@ header {
 }
 
 .avatar {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   border-radius: 8px;
 }
 
 header h1 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #f0f0f0;
+  color: #ffffff;
   margin-bottom: 0.2rem;
 }
 
 nav a {
-  color: #00ff99;
+  color: #ff6666; /* reddish highlight */
   text-decoration: none;
   margin-right: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -56,19 +69,21 @@ nav a:hover {
 }
 
 .socials a {
-  color: #00bfff;
-  text-decoration: none;
-  margin-right: 0.5rem;
+  color: #ff6666;        
+  text-decoration: none; 
+  font-size: 1.3rem; /* bigger icons */
+  margin: 0 0.3rem;
 }
 
 .socials a:hover {
-  text-decoration: underline;
+  color: #ff9999;
 }
 
 /* Writings section */
 .writings h2 {
-  color: #00ff99;
+  color: #ff6666;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .writings ul {
@@ -77,25 +92,25 @@ nav a:hover {
 }
 
 .writings li {
-  margin-bottom: 0.6rem;
-  padding: 0.3rem;
-  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 6px;
   transition: background 0.3s ease;
 }
 
 .writings li:hover {
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .writings .date {
   font-family: monospace;
   font-size: 0.9rem;
-  color: #999;
+  color: #ccc;
   margin-right: 0.5rem;
 }
 
 .writings a {
-  color: #f0f0f0;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }
