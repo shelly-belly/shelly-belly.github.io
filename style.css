@@ -6,20 +6,24 @@
 }
 
 body {
-  /* Use your reddish image */
   background: url("cw.jpeg") no-repeat center center fixed;
   background-size: cover;
 
-  color: #ffffff; /* white text for contrast */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.8;
+  color: #ffffff;
+  font-family: "Menlo", "Meslo LG", monospace;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.725;
+
+  text-rendering: geometricPrecision;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
   max-width: 800px;
   margin: auto;
   padding: 2rem;
-  font-size: 1.1rem; /* slightly bigger font */
 }
 
-/* Add a subtle dark overlay so text is readable */
 body::before {
   content: "";
   position: fixed;
@@ -52,16 +56,40 @@ header h1 {
   margin-bottom: 0.2rem;
 }
 
-nav a {
-  color: #ff6666; /* reddish highlight */
+nav .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav .nav-list li {
+  position: relative;
+  margin: 0 0;
+  padding: 0 0.8rem;
+}
+
+nav .nav-list li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50%;              
+  border-right: 1px dotted #ffffff;
+}
+
+nav .nav-list a {
+  color: #ff6666;
   text-decoration: none;
-  margin-right: 1rem;
   font-weight: 600;
 }
 
-nav a:hover {
+nav .nav-list a:hover {
+  color: #ff9999;
   text-decoration: underline;
 }
+
 
 /* Intro */
 .intro {
@@ -71,7 +99,7 @@ nav a:hover {
 .socials a {
   color: #ff6666;        
   text-decoration: none; 
-  font-size: 1.3rem; /* bigger icons */
+  font-size: 1.0rem; 
   margin: 0 0.3rem;
 }
 
@@ -79,10 +107,44 @@ nav a:hover {
   color: #ff9999;
 }
 
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social-list li {
+  position: relative;
+  margin: 0 0;
+  padding: 0 0.8rem;
+}
+
+.social-list li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50%;              /* control the line height here */
+  border-right: 1px dotted #ffffff;
+}
+
+
+.social-list a {
+  color: #ff6666;       /* red icon color */
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.social-list a:hover {
+  color: #ff9999;       /* lighter red on hover */
+}
+
 /* Writings section */
 .writings h2 {
   color: #ff6666;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   font-size: 1.5rem;
 }
 
