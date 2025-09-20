@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sh4dy's blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to my site</h1>
-  <p>CTF writeups, projects, and blogs will go here 🚀</p>
+  <header>
+    <div class="profile">
+      <img src="avatar.png" alt="Avatar">
+      <h1>sh4dy's blog</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blogs</a>
+        <a href="#">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>Software security and development enthusiast</p>
+      <p class="socials">
+        Find me on 
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>,
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>,
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> and 
+        <a href="mailto:you@example.com">Email</a>.
+      </p>
+    </section>
+
+    <section class="writings">
+      <h2>Writings</h2>
+      <ul>
+        <li><span class="date">2025-05-01</span> <a href="#">Building a regex engine</a></li>
+        <li><span class="date">2024-11-24</span> <a href="#">Learning LLVM (Part-3)</a></li>
+        <li><span class="date">2024-08-03</span> <a href="#">Writing a system call tracer using eBPF</a></li>
+        <li><span class="date">2024-07-06</span> <a href="#">Learning LLVM (Part-2)</a></li>
+        <li><span class="date">2024-06-29</span> <a href="#">Learning LLVM (Part-1) – Writing a simple LLVM pass</a></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
